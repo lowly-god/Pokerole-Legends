@@ -1,4 +1,4 @@
-Here you will find code and possibly other things for my rules suplement for the Pokerole TTRPG: Pokerole Legends. 
+Here you will find my rules suplement for the Pokerole TTRPG: Pokerole Legends. As well as Roll20 Character Sheets, PNGs for the Pokedex and any other resources for it. 
 
 
 
