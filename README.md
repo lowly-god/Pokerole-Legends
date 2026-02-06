@@ -4,7 +4,7 @@ How to use the Legends Roll20 character sheets:.
 
 1. To use them you must be on Roll20 Pro. Free and Plus don't have this feature.
 If you stop paying for Roll20 Pro after you have imported the Legends Character sheet, your game will continue to use them however. So think of it as one time purchase to use them I guess lol? 
-2. Make a back up of your game (just in case! > settings > copy game). 
+2. Make a back up of your game just in case! > settings > copy game. 
 3. Then go to > settings > game settings. Find the dropdown that says what type of character sheet you are using. Scroll all the way up to the top of the dropdown menu to "Custom" and select it.
 4. You'll see a small checkbox that will say "Legacy Sanitization", MAKE SURE THIS IS CHECKED, the sheet will break if it is not. 
 5. You should see various large empty text boxes, select the HTML one and paste the contents of the HTML file into it. Repeat the process for the CSS file in the CSS field. 
