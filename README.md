@@ -2,7 +2,7 @@ Here you will find code and possibly other things for my rules suplement for the
 
 How to use the Legends Roll20 character sheets:.
 
-1. To use them you must be on Roll20 Pro. Free and Plus don't have this feature.
+1. To use them you must be on Roll20 Pro. Free and Plus don't have the Custom Character Sheet feature.
 If you stop paying for Roll20 Pro after you have imported the Legends Character sheet, your game will continue to use them however. So think of it as one time purchase to use them I guess lol? 
 2. Make a back up of your game just in case! > settings > copy game. 
 3. Then go to > settings > game settings. Find the dropdown that says what type of character sheet you are using. Scroll all the way up to the top of the dropdown menu to "Custom" and select it.
