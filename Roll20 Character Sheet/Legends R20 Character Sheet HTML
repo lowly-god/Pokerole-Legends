@@ -1742,7 +1742,7 @@
             Move
         ----------------------------------------------------->
         <div class="section moves">
-            <label class="header">Moves</label>
+            <label class="header">Moves / Maneuvers</label>
             <fieldset class="repeating_moves">
                 <div class="move-item">
                     <span class="move-known-wrapper">
