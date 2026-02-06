@@ -1,0 +1,1527 @@
+.charsheet, .sheet-rolltemplate-PMD, .sheet-rolltemplate-Luck, .sheet-rolltemplate-Feature, .sheet-rolltemplate-Init, .sheet-rolltemplate-Perk, .sheet-rolltemplate-BonusD6 {
+    --background:#cccccc; /*---most textboxes / most large text---*/
+    --section:#cccccc;
+    --section-highlight:#cccccc; /*---unused----*/
+    --foreground:#ffffff20; /*---gm / private toggle?----*/
+    --foreground-highlight:#702c91; /*---diceroll header---*/
+    --border:#1f1f1f; /*---bag, borders, move and perk textboxes---*/
+    --skills-section:#1f1f1f; /*---skills, moves, perk header---*/
+
+    --blue:#1f1f1f;
+    --red:#1f1f1f;
+    --pink:#1f1f1f;
+
+    --tough:#1f1f1f;
+    --cool:#1f1f1f;
+    --beauty:#1f1f1f;
+    --clever:#1f1f1f;
+    --cute:#1f1f1f;
+
+    --normal:#877e61;
+    --bug:#788e3c;
+    --dark:#554f5b;
+    --dragon:#511d86;
+    --electric:#bf9710;
+    --fairy:#d579be;
+    --fight:#926848;
+    --fire:#802626;
+    --flying:#97b3b6;
+    --ghost:#585b86;
+    --grass:#51865a;
+    --ground:#807143;
+    --ice:#60aaa6;
+    --poison:#86319e;
+    --psychic:#a2477a;
+    --rock:#4f382c;
+    --steel:#616161;
+    --water:#21528c;
+    --typeless:#a4a4a4;
+    --shadow:#292755;
+}
+
+.charsheet, .sheet-rolltemplate-PMD, .sheet-rolltemplate-Luck, .sheet-rolltemplate-Feature, .sheet-rolltemplate-Init, .sheet-rolltemplate-Perk, .sheet-rolltemplate-BonusD6 {
+    --section:#403c43;
+}
+
+div.sheet-social.sheet-tough {
+    background-color:var(--tough);
+}
+div.sheet-social.sheet-cool {
+    background-color:var(--cool);
+}
+div.sheet-social.sheet-beauty {
+    background-color:var(--beauty);
+}
+div.sheet-social.sheet-clever {
+    background-color:var(--clever);
+}
+div.sheet-social.sheet-cute {
+    background-color:var(--cute);
+}
+
+.sheet-tab-core,
+.sheet-tab-settings{
+    display:none;
+}
+
+.sheet-view[value='0'] ~ .sheet-tab-core,
+.sheet-view[value='1'] ~ .sheet-tab-settings{
+    display:block;
+}
+
+.sheet-rolltemplate-PMD .sheet-roll-container{
+  width:233px;  
+  color:black;
+}
+.sheet-rolltemplate-PMD .sheet-roll-container > .sheet-roll-row{
+    background-color: #cccccc;
+    padding:2px 0;
+    border:1px solid black;
+    margin:2px 0;
+}
+.sheet-rolltemplate-PMD .sheet-roll-container > .sheet-roll-row:nth-child(1){
+    background: var(--foreground-highlight);
+}
+
+.sheet-rolltemplate-PMD .sheet-roll-row > span{
+    display:block;
+    text-align:center;
+}
+
+.sheet-rolltemplate-PMD  .sheet-roll-container .sheet-roll-name{
+    font-size:12pt;
+    font-weight:bold;
+    color:whitesmoke;
+}
+.sheet-rolltemplate-PMD  .sheet-roll-container .sheet-roll-small{
+    font-size:8pt;
+    font-weight:bold;
+}
+.sheet-rolltemplate-PMD  .sheet-roll-container .sheet-roll-grey{
+    color:whitesmoke;
+}
+
+.sheet-rolltemplate-PMD  .sheet-roll-type{
+    font-size:8pt;
+    font-weight:bold;
+}
+
+.sheet-rolltemplate-PMD  .sheet-roll-value{
+    font-size:16pt;
+    font-weight:bold;
+}
+.sheet-rolltemplate-PMD  .sheet-roll-pool{
+    margin: 2px 0 0;
+}
+
+.sheet-rolltemplate-PMD .sheet-roll-value .inlinerollresult  {
+	display: inline-block;
+	min-width: 1.5em;
+	text-align: center;
+	padding: 5px 0px;
+	border: 2px solid rgba(167, 168, 170,1);
+}
+
+.sheet-rolltemplate-PMD .sheet-roll-value .inlinerollresult.fullcrit {
+	border: 2px solid #3FB315;
+}
+
+.sheet-rolltemplate-PMD .sheet-roll-value .inlinerollresult.fullfail {
+	border: 2px solid #B31515;
+}
+
+.sheet-rolltemplate-PMD .sheet-roll-value .inlinerollresult.importantroll {
+	border: 2px solid #4A57ED;
+}
+
+.sheet-rolltemplate-PMD .sheet-roll-description{
+    padding:7px;
+    text-align:left !important;
+    white-space:pre-line;
+}
+.sheet-rolltemplate-Feature .sheet-roll-container{
+    width:233px;  
+    color:black;
+  }
+  .sheet-rolltemplate-Feature .sheet-roll-container > .sheet-roll-row{
+      background-color: #cccccc;
+      padding:2px 0;
+      border:1px solid black;
+      margin:2px 0;
+  }
+  .sheet-rolltemplate-Feature .sheet-roll-container > .sheet-roll-row:nth-child(1){
+      background: var(--foreground-highlight);
+  }
+  
+  .sheet-rolltemplate-Feature .sheet-roll-row > span{
+      display:block;
+      text-align:center;
+  }
+  
+  .sheet-rolltemplate-Feature  .sheet-roll-container .sheet-roll-name{
+      font-size:12pt;
+      font-weight:bold;
+      color:whitesmoke;
+  }
+  .sheet-rolltemplate-Feature  .sheet-roll-container .sheet-roll-small{
+      font-size:8pt;
+      font-weight:bold;
+  }
+  .sheet-rolltemplate-Feature  .sheet-roll-container .sheet-roll-grey{
+      color:whitesmoke;
+  }
+  
+  .sheet-rolltemplate-Feature  .sheet-roll-type{
+      font-size:8pt;
+      font-weight:bold;
+  }
+  
+  .sheet-rolltemplate-Feature  .sheet-roll-value{
+      font-size:16pt;
+      font-weight:bold;
+  }
+  .sheet-rolltemplate-Feature  .sheet-roll-pool{
+      margin: 2px 0 0;
+  }
+  
+  .sheet-rolltemplate-Feature .sheet-roll-value .inlinerollresult  {
+      display: inline-block;
+      min-width: 1.5em;
+      text-align: center;
+      padding: 5px 0px;
+      border: 2px solid rgba(167, 168, 170,1);
+  }
+  
+  .sheet-rolltemplate-Feature .sheet-roll-value .inlinerollresult.fullcrit {
+      border: 2px solid #3FB315;
+  }
+  
+  .sheet-rolltemplate-Feature .sheet-roll-value .inlinerollresult.fullfail {
+      border: 2px solid #B31515;
+  }
+  
+  .sheet-rolltemplate-Feature .sheet-roll-value .inlinerollresult.importantroll {
+      border: 2px solid #4A57ED;
+  }
+  
+  .sheet-rolltemplate-Feature .sheet-roll-description{
+      padding:7px;
+      text-align:left !important;
+      white-space:pre-line;
+  }
+  
+/* ------------------------------------------------------------------ */
+/* BonusD6 roll template – matches Luck styling exactly               */
+/* ------------------------------------------------------------------ */
+
+.sheet-rolltemplate-BonusD6,
+div.sheet-rolltemplate-BonusD6 {
+    /* Safety wrapper styles if needed */
+}
+
+.sheet-rolltemplate-BonusD6 .sheet-roll-container {
+    width: 233px;
+    color: black;
+}
+
+.sheet-rolltemplate-BonusD6 .sheet-roll-container > .sheet-roll-row {
+    background-color: #cccccc;
+    padding: 2px 0;
+    border: 1px solid black;
+    margin: 2px 0;
+}
+
+/* Header row – highest specificity selectors */
+.sheet-rolltemplate-BonusD6 > .sheet-roll-container > .sheet-roll-row:first-child,
+.sheet-rolltemplate-BonusD6 > .sheet-roll-container > .sheet-roll-row:nth-child(1),
+div.sheet-rolltemplate-BonusD6 > .sheet-roll-container > .sheet-roll-row:first-child,
+div.sheet-rolltemplate-BonusD6 > .sheet-roll-container > .sheet-roll-row:nth-child(1),
+.sheet-rolltemplate-BonusD6 .sheet-roll-container > .sheet-roll-row:first-child,
+.sheet-rolltemplate-BonusD6 .sheet-roll-container > .sheet-roll-row:nth-child(1) {
+    background: var(--foreground-highlight) !important;
+    background-color: var(--foreground-highlight) !important;
+}
+
+/* Text & spans */
+.sheet-rolltemplate-BonusD6 .sheet-roll-row > span {
+    display: block;
+    text-align: center;
+}
+
+.sheet-rolltemplate-BonusD6 .sheet-roll-name {
+    font-size: 12pt;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.sheet-rolltemplate-BonusD6 .sheet-roll-small {
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.sheet-rolltemplate-BonusD6 .sheet-roll-grey {
+    color: whitesmoke;
+}
+
+/* Big value */
+.sheet-rolltemplate-BonusD6 .sheet-roll-value {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+/* Inlineroll borders */
+.sheet-rolltemplate-BonusD6 .sheet-roll-value .inlinerollresult {
+    display: inline-block;
+    min-width: 1.5em;
+    text-align: center;
+    padding: 5px 0px;
+    border: 2px solid rgba(167, 168, 170, 1);
+}
+
+.sheet-rolltemplate-BonusD6 .sheet-roll-value .inlinerollresult.fullcrit {
+    border: 2px solid #3FB315;
+}
+
+.sheet-rolltemplate-BonusD6 .sheet-roll-value .inlinerollresult.fullfail {
+    border: 2px solid #B31515;
+}
+
+.sheet-rolltemplate-BonusD6 .sheet-roll-value .inlinerollresult.importantroll {
+    border: 2px solid #4A57ED;
+}
+
+/* Description */
+.sheet-rolltemplate-BonusD6 .sheet-roll-description {
+    padding: 7px;
+    text-align: left !important;
+    white-space: pre-line;
+}
+  
+/* ------------------------------------------------------------------ */
+/* Perk roll template – matches PMD/Perk/Init styling exactly         */
+/* ------------------------------------------------------------------ */
+  
+    .sheet-rolltemplate-Perk .sheet-roll-container {
+    width: 233px;
+    color: black;
+}
+
+.sheet-rolltemplate-Perk .sheet-roll-container > .sheet-roll-row {
+    background-color: #cccccc;
+    padding: 2px 0;
+    border: 1px solid black;
+    margin: 2px 0;
+}
+
+.sheet-rolltemplate-Perk .sheet-roll-container > .sheet-roll-row:nth-child(1) {
+    background: var(--foreground-highlight);
+}
+
+.sheet-rolltemplate-Perk .sheet-roll-row > span {
+    display: block;
+    text-align: center;
+}
+
+.sheet-rolltemplate-Perk .sheet-roll-container .sheet-roll-name {
+    font-size: 12pt;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.sheet-rolltemplate-Perk .sheet-roll-container .sheet-roll-small {
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.sheet-rolltemplate-Perk .sheet-roll-container .sheet-roll-grey {
+    color: whitesmoke;
+}
+
+.sheet-rolltemplate-Perk .sheet-roll-type {
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.sheet-rolltemplate-Perk .sheet-roll-value {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 0;           /* remove extra space below big number */
+}
+
+.sheet-rolltemplate-Perk .sheet-roll-pool {
+    margin: 0;                  /* no extra top margin */
+    color: black !important;    /* force black instead of whitesmoke */
+}
+
+/* Remove separator line / extra spacing between big result and 1dN */
+.sheet-rolltemplate-Perk .sheet-roll-row + .sheet-roll-row {
+    border-top: none !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Inlineroll styling (unchanged but kept for completeness) */
+.sheet-rolltemplate-Perk .sheet-roll-value .inlinerollresult {
+    display: inline-block;
+    min-width: 1.5em;
+    text-align: center;
+    padding: 5px 0px;
+    border: 2px solid rgba(167, 168, 170,1);
+}
+
+.sheet-rolltemplate-Perk .sheet-roll-value .inlinerollresult.fullcrit {
+    border: 2px solid #3FB315;
+}
+
+.sheet-rolltemplate-Perk .sheet-roll-value .inlinerollresult.fullfail {
+    border: 2px solid #B31515;
+}
+
+.sheet-rolltemplate-Perk .sheet-roll-value .inlinerollresult.importantroll {
+    border: 2px solid #4A57ED;
+}
+
+.sheet-rolltemplate-Perk .sheet-roll-description {
+    padding: 7px;
+    text-align: left !important;
+    white-space: pre-line;
+}
+  
+/* ------------------------------------------------------------------ */
+/* Luck roll template – matches PMD/Perk/Init styling exactly         */
+/* ------------------------------------------------------------------ */
+.sheet-rolltemplate-Luck .sheet-roll-container{
+    width:233px;  
+    color:black;
+}
+
+.sheet-rolltemplate-Luck .sheet-roll-container > .sheet-roll-row{
+    background-color: #cccccc;
+    padding:2px 0;
+    border:1px solid black;
+    margin:2px 0;
+}
+
+.sheet-rolltemplate-Luck .sheet-roll-container > .sheet-roll-row:nth-child(1){
+    background: var(--foreground-highlight);
+}
+
+.sheet-rolltemplate-Luck .sheet-roll-row > span{
+    display:block;
+    text-align:center;
+}
+
+.sheet-rolltemplate-Luck .sheet-roll-name{
+    font-size:12pt;
+    font-weight:bold;
+    color:whitesmoke;
+}
+
+.sheet-rolltemplate-Luck .sheet-roll-small{
+    font-size:8pt;
+    font-weight:bold;
+}
+
+.sheet-rolltemplate-Luck .sheet-roll-grey{
+    color:whitesmoke;
+}
+
+.sheet-rolltemplate-Luck .sheet-roll-type{
+    font-size:8pt;
+    font-weight:bold;
+}
+
+.sheet-rolltemplate-Luck .sheet-roll-value{
+    font-size:16pt;
+    font-weight:bold;
+}
+
+.sheet-rolltemplate-Luck .sheet-roll-pool{
+    margin: 2px 0 0;
+}
+
+.sheet-rolltemplate-Luck .sheet-roll-value .inlinerollresult  {
+    display: inline-block;
+    min-width: 1.5em;
+    text-align: center;
+    padding: 5px 0px;
+    border: 2px solid rgba(167, 168, 170,1);
+}
+
+.sheet-rolltemplate-Luck .sheet-roll-value .inlinerollresult.fullcrit {
+    border: 2px solid #3FB315;
+}
+
+.sheet-rolltemplate-Luck .sheet-roll-value .inlinerollresult.fullfail {
+    border: 2px solid #B31515;
+}
+
+.sheet-rolltemplate-Luck .sheet-roll-value .inlinerollresult.importantroll {
+    border: 2px solid #4A57ED;
+}
+
+.sheet-rolltemplate-Luck .sheet-roll-description{
+    padding:7px;
+    text-align:left !important;
+    white-space:pre-line;
+
+
+/* ------------------------------------------------------------------ */
+/* Custom Perk die roll – styled to match Luck exactly                */
+/* ------------------------------------------------------------------ */
+
+}
+.sheet-rolltemplate-Perk .sheet-roll-small.sheet-roll-pool {
+    font-size: 8pt;
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: center;
+    display: block;
+    margin: 2px 0 0;
+}
+
+.sheet-rolltemplate-Perk .sheet-roll-value {
+    font-size: 16pt;
+    font-weight: bold;
+    color: black;
+    display: block;
+    text-align: center;
+}
+
+/* Optional: make the container width match Luck/PMD if it feels off */
+.sheet-rolltemplate-Perk .sheet-roll-container {
+    width: 233px;
+
+
+/* ------------------------------------------------------------------ */
+
+    
+}
+
+.sheet-rolltemplate-Init .sheet-roll-container{
+    width:233px;  
+    color:black;
+  }
+  .sheet-rolltemplate-Init .sheet-roll-container > .sheet-roll-row{
+      background-color: #cccccc;
+      padding:2px 0;
+      border:1px solid black;
+      margin:2px 0;
+  }
+  .sheet-rolltemplate-Init .sheet-roll-container > .sheet-roll-row:nth-child(1){
+      background: var(--foreground-highlight);
+  }
+  
+  .sheet-rolltemplate-Init .sheet-roll-row > span{
+      display:block;
+      text-align:center;
+  }
+  
+  .sheet-rolltemplate-Init  .sheet-roll-container .sheet-roll-name{
+      font-size:12pt;
+      font-weight:bold;
+      color:whitesmoke;
+  }
+  .sheet-rolltemplate-Init  .sheet-roll-container .sheet-roll-small{
+      font-size:8pt;
+      font-weight:bold;
+  }
+  .sheet-rolltemplate-Init  .sheet-roll-container .sheet-roll-grey{
+      color:whitesmoke;
+  }
+  
+  .sheet-rolltemplate-Init  .sheet-roll-type{
+      font-size:8pt;
+      font-weight:bold;
+  }
+  
+  .sheet-rolltemplate-Init  .sheet-roll-value{
+      font-size:16pt;
+      font-weight:bold;
+  }
+  .sheet-rolltemplate-Init  .sheet-roll-pool{
+      margin: 2px 0 0;
+  }
+  
+  .sheet-rolltemplate-Init .sheet-roll-value .inlinerollresult  {
+      display: inline-block;
+      min-width: 1.5em;
+      text-align: center;
+      padding: 5px 0px;
+      border: 2px solid rgba(167, 168, 170,1);
+  }
+  
+.sheet-rolltemplate-Init .sheet-roll-value .inlinerollresult.fullcrit {
+    border: 2px solid #3FB315;
+}
+
+.sheet-rolltemplate-Init .sheet-roll-value .inlinerollresult.fullfail {
+    border: 2px solid #B31515;
+}
+
+.sheet-rolltemplate-Init .sheet-roll-value .inlinerollresult.importantroll {
+    border: 2px solid #4A57ED;
+}
+
+.sheet-rolltemplate-Init .sheet-roll-description{
+    padding:7px;
+    text-align:left !important;
+    white-space:pre-line;
+}
+
+.sheet-toggle-header{
+    position:relative;
+    display:block;
+    width:100%;
+    margin-bottom:20px;
+}
+.sheet-toggle-header .sheet-view-toggle{
+    float:right;
+    margin-left:2px;
+}
+
+.sheet-toggle {
+    display: inline-block;
+    position: relative;
+}
+
+.sheet-toggle input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.sheet-toggle span {
+    display: block;
+    padding: 2px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: var(--foreground);      /* unselected */
+    color: whitesmoke;                             /* light text on dark bg */
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    user-select: none;
+}
+
+.sheet-toggle {
+    display: inline-block;
+    position: relative;
+}
+
+.sheet-toggle input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.sheet-toggle span {
+    display: block;
+    padding: 2px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: var(--background);      /* unselected = light #cccccc */
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* Selected = dark background + light text */
+.sheet-toggle input:checked ~ span {
+    background: var(--foreground) !important;   /* dark */
+    color: whitesmoke !important;
+}
+
+/* Hover: subtle darken on unselected only */
+.sheet-toggle input:not(:checked) ~ span:hover {
+    background: color-mix(in srgb, var(--background) 70%, black 30%);
+}
+
+/* Reinforce pointer */
+.sheet-toggle:hover {
+    cursor: pointer;
+}
+
+div.sheet-section{
+    position:relative;
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    border-color:var(--border);                    /* fixed typo: --border instead of -border */
+    margin-bottom:10px;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.sheet-type-toggle[value="trainer"] ~   div.sheet-section{ background-color:var(--section);}
+.sheet-type-toggle[value="normal"] ~    div.sheet-section{ background-color:var(--normal);}
+.sheet-type-toggle[value="bug"] ~       div.sheet-section{ background-color:var(--bug);}
+.sheet-type-toggle[value="dark"] ~      div.sheet-section{ background-color:var(--dark);}
+.sheet-type-toggle[value="dragon"] ~    div.sheet-section{ background-color:var(--dragon);}
+.sheet-type-toggle[value="electric"] ~  div.sheet-section{ background-color:var(--electric);}
+.sheet-type-toggle[value="fairy"] ~     div.sheet-section{ background-color:var(--fairy);}
+.sheet-type-toggle[value="fight"] ~     div.sheet-section{ background-color:var(--fight);}
+.sheet-type-toggle[value="fire"] ~      div.sheet-section{ background-color:var(--fire);}
+.sheet-type-toggle[value="flying"] ~    div.sheet-section{ background-color:var(--flying);}
+.sheet-type-toggle[value="ghost"] ~     div.sheet-section{ background-color:var(--ghost);}
+.sheet-type-toggle[value="grass"] ~     div.sheet-section{ background-color:var(--grass);}
+.sheet-type-toggle[value="ground"] ~    div.sheet-section{ background-color:var(--ground);}
+.sheet-type-toggle[value="ice"] ~       div.sheet-section{ background-color:var(--ice);}
+.sheet-type-toggle[value="poison"] ~    div.sheet-section{ background-color:var(--poison);}
+.sheet-type-toggle[value="psychic"] ~   div.sheet-section{ background-color:var(--psychic);}
+.sheet-type-toggle[value="rock"] ~      div.sheet-section{ background-color:var(--rock);}
+.sheet-type-toggle[value="steel"] ~     div.sheet-section{ background-color:var(--steel);}
+.sheet-type-toggle[value="water"] ~     div.sheet-section{ background-color:var(--water);}
+.sheet-type-toggle[value="typeless"] ~   div.sheet-section{ background-color:var(--typeless);}
+.sheet-type-toggle[value="shadow"] ~     div.sheet-section{ background-color:var(--shadow);}
+
+input[type="checkbox"]{
+    display:inline;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type="number"],select{
+    
+    -webkit-appearance:textfield;
+    -moz-appearance:textfield;
+    appearance:textfield;
+    text-align:center;
+}
+textarea{
+    resize:vertical;
+    -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+    
+}
+button[type=roll].sheet-blank-roll-button::before 
+{ 
+    content: ''; 
+    background:none;
+    border:none;
+}
+button[type="roll"]{
+    border-radius:15px;
+    min-width:18px;
+    border-color:var(--border);
+    vertical-align: middle;
+}
+label{
+    display:inline-block;
+    width:auto;
+    margin:0;
+    vertical-align: middle;
+    padding:0px;
+}
+select{
+    vertical-align: middle;
+    margin: 0;
+    -moz-text-align-last:center;
+         text-align-last:center;
+}
+
+input, select, textarea{
+    background-color: var(--background);
+    border-color:#cccccc;
+}
+
+.sheet-wrapper{
+    display:block;
+    width:800px;
+    margin:50px auto 0;
+}
+
+.sheet-creature-toggle-wrapper{
+    position: absolute;
+    right: -50px;
+}
+.sheet-creature-toggle-wrapper input[type="checkbox"]{
+    position:relative;
+    display:inline-block;
+    width:50px;
+    height:50px;
+    opacity:0;
+    z-index:1;
+} /*image*/
+.sheet-creature-toggle-wrapper img {
+    position: relative;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    top: -5px;          
+}
+
+.sheet-creature-toggle[value="1"] ~ .sheet-pokemon-only,
+.sheet-creature-toggle[value="0"] ~ .sheet-trainer-only{
+    display:none !important;
+}
+
+.sheet-PMD-toggle[value="1"] ~ .sheet-Core-only,
+.sheet-PMD-toggle[value="0"] ~ .sheet-PMD-only{
+    display:none !important;
+}
+
+.sheet-options-toggle[value="1"] ~ .sheet-no-options,
+.sheet-options-toggle[value="0"] ~ .sheet-use-options{
+    display:none !important;
+}
+.sheet-contest-toggle[value="1"] ~ .sheet-battle-mode,
+.sheet-contest-toggle[value="0"] ~ .sheet-contest-mode{
+    display:none !important;
+}
+
+
+/***************************
+    Fields
+***************************/
+
+.sheet-field-labeled{
+    position:relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.sheet-field-labeled > span:first-child{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px 15px 2px 15px;
+    text-align: inherit;
+    width: 100% !important;
+    color: black;
+    background-color: var(--background);
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+}
+
+.sheet-field-labeled > select{
+    display:inline-block;
+    text-align:center;
+    width:100% ;
+    padding-top: 7px;
+    margin: 0;
+    padding-bottom: 2px;
+    padding-top: 8px;
+}
+.sheet-field-labeled > input{
+    border:1px solid;
+    border-radius:10px;
+    padding:10px 15px 2px 15px;
+    text-align:inherit;
+    width:100% !important;
+    height:100% !important;
+    color:black;
+}
+.sheet-field-labeled > textarea{
+    border:1px solid;
+    border-radius:10px;
+    padding:10px 15px 2px 15px;
+    text-align:inherit;
+    width:100% !important;
+    color:black;
+}
+.sheet-field-labeled > select + span,
+.sheet-field-labeled > input + span,
+.sheet-field-labeled > span:first-child + span{
+    position:absolute;
+    top:0px;
+    left:10px;
+    font-size:xx-small;
+    font-weight:bold;
+    color:grey;
+    pointer-events: none;
+}
+
+.sheet-field-labeled > input[disabled="true"],
+.sheet-field-labeled > span:first-child{
+    border-radius:5px;
+    border:1px black solid;
+    background-color:#cccccc;
+}
+
+.sheet-field-labeled > input[disabled="true"] + span,
+.sheet-field-labeled > span:first-child + span{
+    width:100%;
+    left:0px;
+    text-align:center;
+    color:black;
+}
+
+
+/***************************
+    Character Info
+***************************/
+
+div.sheet-character-header{
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0;
+    z-index: 10 !important;
+    background-color: var(--section);
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    border-color:var(-border);
+    margin-bottom:10px;
+
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+div.sheet-character-header strong{
+    color: var(--background);
+    text-shadow:none;
+}
+
+
+.sheet-character-info .sheet-header input{
+    border:2px solid #000000;
+}
+.sheet-character-info .sheet-left-col,
+.sheet-character-info .sheet-right-col{
+    display:block;
+}
+.sheet-character-info .sheet-right-col{
+    background-color:var(--border);
+    border-radius:10px;
+    padding:15px 10px;
+}
+
+.sheet-character-info .sheet-grid{
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-columns: 400px 10px auto;
+    grid-template-columns: 400px auto;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+}
+
+/***************************
+    Trainer Character Info
+***************************/
+
+.sheet-party-pokeball{
+    position: relative;
+}
+.sheet-party-pokeball > input[type="radio"]{
+    position:absolute;
+    top:-5px;
+    left:0px;
+    width:30px !important;
+    height:30px  !important;
+    z-index:1;
+    opacity:0;
+}
+.sheet-party-pokeball > input[type="text"]{
+    border-radius: 20px;
+    padding-left: 30px;
+    width: 170px;
+}
+
+.sheet-party-pokeball > img{
+    position:absolute;
+    top:-6px;
+    left:0px;
+    width:30px !important;
+    height:30px  !important;
+    margin:0;
+    
+}
+
+.sheet-pokeball-state[value="0"] ~ .sheet-pokeball-state-opened,
+.sheet-pokeball-state[value="0"] ~ .sheet-pokeball-state-locked,
+.sheet-pokeball-state[value="1"] ~ .sheet-pokeball-state-locked,
+.sheet-pokeball-state[value="1"] ~ .sheet-pokeball-state-closed,
+.sheet-pokeball-state[value="2"] ~ .sheet-pokeball-state-closed,
+.sheet-pokeball-state[value="2"] ~ .sheet-pokeball-state-opened{
+    display:none;
+}
+
+.sheet-pokeball-state[value="0"] ~ .sheet-pokeball-state-closed,
+.sheet-pokeball-state[value="1"] ~ .sheet-pokeball-state-opened,
+.sheet-pokeball-state[value="2"] ~ .sheet-pokeball-state-locked{
+    display:inline-block;
+}
+
+.sheet-trainer-party{
+    display:inline-block;
+    width:auto;
+    margin: 5px auto 0px;
+}
+
+/***************************
+    Pokemon Character Info
+***************************/
+.sheet-name-wrapper{
+    position:relative;
+    top:-25px;
+}
+
+/***************************
+    Attributes
+***************************/
+.sheet-attributes .sheet-grid{
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-columns:auto 5px 300px;
+    grid-template-columns:auto 300px;
+    -webkit-column-gap:5px;
+       -moz-column-gap:5px;
+            column-gap:5px;
+}
+.sheet-attributes .sheet-attribute-row{
+    display:block;
+    margin-bottom:13px;
+}
+.sheet-attributes .sheet-battle,
+.sheet-attributes .sheet-social{
+    display:inline-block;
+    padding:5px;
+    border: 2px solid transparent;
+    border-radius:10px;
+    box-shadow: none !important;
+}
+.sheet-attributes .sheet-battle > label {
+    width: 70px;
+    text-align: right;
+}
+.sheet-attributes .sheet-social > label {
+    width: 70px;
+    text-align: right;
+}
+.sheet-attributes .sheet-battle .sheet-field-labeled,
+.sheet-attributes .sheet-social .sheet-field-labeled{
+    width:55px;
+    text-align:center;
+}
+.sheet-attributes .sheet-battle{
+    background-color:var(--blue);
+}
+.sheet-attributes .sheet-right{
+    border-radius:10px;
+    background-color:var(--border);
+    padding:5px;
+    border: none;                /* removed border */
+    box-shadow: none !important; /* removed shadow */
+}
+.sheet-attributes .sheet-hp-will{
+    color:var(--background);
+    padding: 0 5px;
+    border: none;
+    box-shadow: none;
+}
+.sheet-attributes .sheet-hp-will .sheet-field-labeled{
+    width:70px;
+}
+.sheet-attributes .sheet-hp-will strong{
+    font-size: 15pt;
+    vertical-align: middle;
+}
+.sheet-attributes .sheet-bonuses{
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-columns: 60% 5px auto;
+    grid-template-columns: 60% auto;
+    -webkit-column-gap:5px;
+       -moz-column-gap:5px;
+            column-gap:5px;
+    padding:5px 10px;
+    border: none;
+    box-shadow: none;
+}
+.sheet-attributes .sheet-bonuses strong{
+    color:var(--background);
+    font-size: 9pt;
+}
+.sheet-attributes .sheet-bonuses button{
+    padding:2px 5px;
+    width:90px;
+}
+.sheet-attributes .sheet-bonuses{
+    margin-top:5px;
+    border-radius:10px;
+    background-color:var(--border);
+    padding:5px 10px;
+    border: none;                /* removed border */
+    box-shadow: none !important; /* removed shadow */
+}
+.sheet-generic-roll{
+    margin:auto;
+}
+.sheet-generic-roll strong{color:var(--background);}
+.sheet-generic-roll button[type="roll"]{
+    width:70px;
+    padding:2px 10px;
+}
+
+/***************************
+    Conditions
+***************************/
+.sheet-conditions{
+    margin-top:15px;
+}
+.sheet-conditions .sheet-conditions-row{
+    background-color:var(--background);
+    padding:2px 10px;
+    margin-bottom:2px;
+    border-radius:10px;
+}
+
+.sheet-conditions .sheet-condition-collapse{padding-left:5px;}
+.sheet-conditions .sheet-condition-collapse label{
+    font-size: 9pt;
+}
+.sheet-conditions .sheet-collapse-input[value="1"] ~ .sheet-condition-collapse{
+    display:inline-block;
+    
+}
+.sheet-conditions .sheet-collapse-input[value="0"] ~ .sheet-condition-collapse{
+    display:none;
+}
+
+/***************************
+    Combat Tracker
+***************************/
+
+.sheet-actions-taken {
+    margin-top: 12px;
+    padding: 10px;
+    background-color: var(--border);
+    border-radius: 10px;
+}
+
+/* Header styling – matches inventory headers */
+.sheet-actions-taken label.header {
+    display: block;
+    text-align: center;
+    border-width: 0 0 3px;
+    border-style: solid;
+    border-color: var(--background);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 0;
+    color: var(--background);
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.sheet-actions-taken label {
+    color: var(--background);
+}
+
+/* All action rows */
+.sheet-actions-taken .sheet-action-row {
+    background-color: var(--background);
+    padding: 5px 120px 5px 10px;     /* extra right padding to prevent text overlap with checkboxes */
+    margin-bottom: 2px;
+    border-radius: 10px;
+    line-height: 1.4;
+    min-height: 28px;                /* ensures row has visible height even with absolute children */
+    position: relative;              /* needed for absolute positioning of checkboxes */
+    box-sizing: border-box;
+}
+
+.sheet-actions-taken strong {
+    display: inline-block;
+    width: 140px;               /* ← change from 120px to 140px – gives ~20px breathing room */
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Checkboxes positioned on the right side */
+.sheet-actions-taken .sheet-action-row input[type="checkbox"] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+/* Position each checkbox from the right edge */
+.sheet-actions-taken .sheet-action-row input[type="checkbox"]:nth-of-type(1) { right: 10px; }
+.sheet-actions-taken .sheet-action-row input[type="checkbox"]:nth-of-type(2) { right: 34px; }
+.sheet-actions-taken .sheet-action-row input[type="checkbox"]:nth-of-type(3) { right: 58px; }
+.sheet-actions-taken .sheet-action-row input[type="checkbox"]:nth-of-type(4) { right: 82px; }
+.sheet-actions-taken .sheet-action-row input[type="checkbox"]:nth-of-type(5) { right: 106px; }
+
+/* Optional: remove trailing margin on the last checkbox if needed */
+.sheet-actions-taken .sheet-action-row input[type="checkbox"]:last-of-type {
+    margin-right: 0;
+}
+
+/***************************
+    Attitude
+***************************/
+.sheet-attitudes{
+    position:relative;
+    margin-top:20px;
+}
+.sheet-attitude-grid{
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-columns:auto 10px auto 10px auto;
+    grid-template-columns:auto auto auto;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-column-gap:10px;
+       -moz-column-gap:10px;
+            column-gap:10px;
+    
+}
+.sheet-PMD-swap-wrapper{
+    position:absolute;
+    top:-35px;
+    left: calc(50% - 25px);
+}
+.sheet-PMD-swap-wrapper input{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    position:relative;
+    z-index:1;
+    opacity:0;
+}
+.sheet-PMD-swap-wrapper img{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    position:relative;
+    left:-50px;
+}
+
+/***************************
+    Skills
+***************************/
+
+.sheet-skills .sheet-skills-main{
+    display:block;
+    width:-webkit-max-content;
+    width:-moz-max-content;
+    width:max-content;
+    margin:0 auto 2px;
+    border-radius:10px;
+    background-color:var(--blue);
+    padding: 5px 0px;
+    text-shadow: none;
+}
+.sheet-skills .sheet-skills-sub{
+    display:block;
+    width:-webkit-max-content;
+    width:-moz-max-content;
+    width:max-content;
+    margin:0 auto;
+    background-color:var(--skills-section);
+    border-radius:10px;
+    padding:5px 0px;
+    color: var(--background);
+    text-shadow: none;
+}
+
+.sheet-skills .sheet-skills-title{
+    display:block;
+    width:-webkit-max-content;
+    width:-moz-max-content;
+    width: 730px;
+    margin: 2px auto;
+    margin-top: 10px;
+    border-radius:10px;
+    background-color:var(--pink);
+    padding: 5px 0px;
+    text-shadow: none;
+}
+
+.sheet-skills .sheet-skills-contest{
+    display:block;
+    width:-webkit-max-content;
+    width:-moz-max-content;
+    width:max-content;
+    margin:2px auto;
+    border-radius:10px;
+    background-color:var(--pink);
+    padding: 5px 0px;
+    color: var(--background);
+}
+
+.sheet-skills .sheet-skills-contest strong{
+    text-shadow: none;
+}
+
+.sheet-skills .sheet-skills-col > *{
+    margin-top:3px;
+}
+.sheet-skills .sheet-skills-col{
+    display:inline-block;
+    width:180px;
+}
+.sheet-skills .sheet-skills-col strong{
+    display:inline-block;
+    width:100px;
+    text-align:right;
+}
+.sheet-skills .sheet-skills-col label,
+.sheet-skills .sheet-skills-title label{
+    display:block;
+    text-align:center
+}
+.sheet-skills .sheet-skills-col .sheet-field-labeled{
+    display:block;
+    width:100px;
+    margin:0 auto;
+    text-align:center;
+}
+
+/***************************
+    Inventory
+***************************/
+
+.sheet-inventory label,
+.sheet-inventory strong{
+    color:var(--background);
+}
+.sheet-inventory .sheet-header{
+    display:block;
+    text-align:center;
+    border-width:0 0 3px;
+    border-radius:10px;
+    border-style:solid;
+    border-color:var(--background);
+    margin-bottom:5px;
+}
+.sheet-inventory-divide{
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-columns: 350px 10px auto;
+    grid-template-columns: 350px auto;
+    -webkit-column-gap:10px;
+       -moz-column-gap:10px;
+            column-gap:10px;
+    margin-bottom:10px;
+}
+.sheet-achievements-divide{
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-columns: 200px 10px auto;
+    grid-template-columns: 200px auto;
+    -webkit-column-gap:10px;
+       -moz-column-gap:10px;
+            column-gap:10px;
+}
+.sheet-inventory .sheet-PMD-gear,
+.sheet-inventory .sheet-inventory-potions,
+.sheet-inventory .sheet-inventory-quick,
+.sheet-inventory .sheet-inventory-large,
+.sheet-inventory .sheet-inventory-notes,
+.sheet-inventory .sheet-inventory-badges{
+    display:block;
+    background-color:var(--border);
+    padding:5px;
+    border-radius:10px;
+}
+.sheet-inventory .sheet-inventory-potions input{
+    text-align:left;
+}
+.sheet-inventory .sheet-inventory-quick{
+    min-height:70px;
+}
+
+.sheet-inventory .sheet-inventory-item{
+    display:block;
+    width:90%;
+    margin:0 auto 2px;
+}
+.sheet-inventory  input.sheet-item-name{
+    display:inline-block;
+}
+.sheet-inventory input.sheet-item-count{
+    display:inline-block;
+    width: 40px;
+    margin-right:5px;
+    border-radius:15px;
+    font-weight:bold;
+}
+
+.sheet-inventory .sheet-inventory-badges{
+    margin-top:0px;
+}
+
+
+
+/***************************
+    Move
+***************************/
+
+.sheet-moves label,
+.sheet-moves strong{
+    color:var(--background);
+    background-color: var(--border);
+}
+
+.sheet-moves .sheet-move-item{
+    background-color: none;
+    position:relative;
+}
+.sheet-moves .sheet-header{
+    display:block;
+    margin:10px auto;
+    text-align:center;
+    border: solid var(--background);
+    border-width:0 0 3px 0;
+    border-radius:10px;
+}
+
+.sheet-moves .sheet-move-item{
+    display:block;
+    width: 700px;
+    margin: 0px auto 3px;
+}
+
+.sheet-moves select{
+    display:inline-block;
+    width:120px;
+}
+
+.sheet-moves .sheet-move-header{
+    border-radius:10px 10px 0 0;
+    background-color:var(--skills-section);
+    padding:3px 10px ;
+}
+.sheet-moves .sheet-move-body{
+    border-radius:0 0 10px 10px;
+    background-color:var(--border);
+    padding: 3px 15px;
+
+}
+.sheet-moves .sheet-move-known-wrapper{
+    position: absolute;
+    left: -35px;
+    top: 42px
+}
+.sheet-moves .sheet-move-known-wrapper input{
+    position:relative;
+    display:inline-block;
+    width:20px;
+    height:20px;
+    z-index:1;
+    opacity:0;
+}
+.sheet-moves .sheet-move-known-wrapper input+ span{
+    position:relative;
+    left: -25px;
+    top: 7px;
+    display:inline-block;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color:lightgrey; /*lightgrey*/
+    border:1px solid;
+}
+.sheet-moves .sheet-move-known-wrapper input:checked + span {
+    background-color:var(--red);
+}
+
+
+.sheet-moves .sheet-move-display-mode[value="1"] ~ .sheet-move-edit,
+.sheet-moves .sheet-move-display-mode[value="0"] ~ .sheet-move-display{
+    display:none;
+}
+
+.sheet-move-display span.sheet-move-accuracy,
+.sheet-move-display span.sheet-move-damage{
+    display:inline-block;
+    width:100px;
+    font-size:10pt;
+}
+.sheet-move-display span.sheet-move-effect{
+    display:inline-block;
+    width:50px;
+    border-bottom:2px solid black;
+}
+.sheet-move-display span.sheet-move-effect-chance{
+    display:inline-block;
+    text-align:center;
+    width:20px;
+}
+.sheet-move-body{
+    position:relative;
+    }
+.sheet-move-body .sheet-move-display{
+    color: var(--background);
+}
+.sheet-move-body .sheet-move-edit .sheet-move-experience{
+    position:absolute;
+    top:0px;
+    right:40px;
+}
+.sheet-move-body .sheet-move-display .sheet-move-experience{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.sheet-move-display span.sheet-move-descr{
+    color: var(--background);
+    display:block;
+    width:80%;
+    height:auto;
+    min-height:25px;
+    margin:0 auto;
+    padding: 1em 5em;
+    text-align: left;
+    font-weight: bold;
+    background-color: #ffffff20;
+}
+
+.sheet-move-display-toggle[value="1"] ~ .sheet-move-edit,
+.sheet-move-display-toggle[value="0"] ~ .sheet-move-display{
+    display:none;
+}
+.sheet-skills-col button[type="roll"] {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    font-size: 12pt;
+    font-weight: bold;
+    border-radius: 50%;
+    background: #ffffff20;
+    color: white;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.sheet-skills-col .field-labeled {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* Dark sheet background ONLY - no layout changes */
+.charsheet {
+    background-color: #1f1f1f !important;
+}
+
+.sheet-wrapper {
+    background-color: #1f1f1f !important;
+    /* NO margin/min-height changes - keeps original layout intact */
+}
+
+
+
