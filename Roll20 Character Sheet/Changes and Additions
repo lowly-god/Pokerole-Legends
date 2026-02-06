@@ -1,0 +1,28 @@
+Additions/Changes from Pokerole 2.0 Character Sheet: 
+
+Colors changed for nearly everything
+Typeless and Shadow type now valid types
+3.0 Ranks added
+Colosseum Ranks added
+Concept changed to Archetype
+Nature now auto-calculates Attribute Limit increase, decrease and Confidence
+Human characters have a working Special Attribute
+Stamina Points added and auto-calculate by Rank
+Max Will Points auto-calculate from Insight
+Legends additional Status Conditions added
+Action Sequence tracker added
+Initiative Button now always adds to tracker automatically if your token is on the board
+Bonus button next to Initiative adds a flat D6 roll to your Initiative in tracker
+Insight now auto-calculates Special Defense
+Pokeballs can now be rolled for any D6 amount (ie Legends specific balls)
+Luck Check button added (rolls 1d100 + 5 for each point you have in Luck Skill)
+Armor Bonus field added in Defenses
+Legends Skills have been added and are rollable
+Extra Skills are now rollable
+Happiness and Loyalty are now rollable 
+Bond is now rollable (Happiness + Loyalty)
+Equipment Pocket displays main hand, off hand, armor, accessory.
+Old potions field removed as Potions work differently in Legends
+Pokemon now use Training Points
+Perk section added (also you can add any 1d[number] you want and roll them)
+Move now have all additional rollable skills, attributes, types, targets etc.
