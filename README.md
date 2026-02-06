@@ -12,7 +12,7 @@ If you stop paying for Roll20 Pro after you have imported the Legends Character 
 5. You should see various large empty text boxes, select the HTML one and paste the contents of the HTML file into it. Repeat the process for the CSS file in the CSS field. 
 6. Hit save. 
 7. Launch your game.
-8. 
+
 If you are updating a current game to this version, your attributes, skills, moves and items should carry over. 
 But anything in Potion pockets of bags or the Victories field of Pokemon will need to be manually copied over. 
 This is because Legends handles Potions differently and Pokerole 3.0 uses Training Points instead of victories.
