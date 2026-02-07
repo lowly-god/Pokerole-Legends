@@ -274,8 +274,8 @@
                 <span class="creature-toggle-wrapper">
                     <input type="hidden" class="creature-toggle" name="attr_creature_mode"  value="0" />
                     <input type="checkbox" name="attr_creature_mode"  value="1" title="Trainer or Pokemon" >
-                    <img class="sheet-trainer-only" src="https://github.com/lowly-god/Pokerole-Legends/blob/main/Trainer-Icon.png?raw=true" />
-                    <img class="sheet-pokemon-only" src="https://github.com/lowly-god/Pokerole-Legends/blob/main/Pokeball-Min-Icon.png?raw=true" />
+                    <img class="sheet-trainer-only" src="https://raw.githubusercontent.com/lowly-god/Pokerole-Legends/main/Roll20%20Character%20Sheet/Trainer-Icon.png" />
+                    <img class="sheet-pokemon-only" src="https://raw.githubusercontent.com/lowly-god/Pokerole-Legends/main/Roll20%20Character%20Sheet/Pokeball-Min-Icon.png" />
                 </span>
         </div>
 
@@ -1195,8 +1195,8 @@
             <span class="PMD-swap-wrapper">
                 <input type="hidden" name="attr_PMD_mode" class="PMD-toggle" value="0" />
                 <input type="checkbox" name="attr_PMD_mode"  value="1" title="Core or PMD" />
-                <img class="PMD-only" src="https://github.com/lowly-god/Pokerole-Legends/blob/main/PMD-Icon.png?raw=true" />
-                <img class="Core-only" src="https://github.com/lowly-god/Pokerole-Legends/blob/main/Pokeball-Min-Icon.png?raw=true" />
+                <img class="PMD-only" src="https://raw.githubusercontent.com/lowly-god/Pokerole-Legends/main/Roll20%20Character%20Sheet/PMD-Icon.png" />
+                <img class="Core-only" src="https://raw.githubusercontent.com/lowly-god/Pokerole-Legends/main/Roll20%20Character%20Sheet/Pokeball-Min-Icon.png" />
             </span>
             <div class="sheet-attitude-grid" style="background:#1f1f1f;border-radius:10px; padding: 5px 0px;">
                 <input type="hidden" name="attr_PMD_mode" class="PMD-toggle" value="0" />
@@ -2132,3 +2132,5 @@
 
 </script>
 </div>
+
+
