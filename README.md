@@ -16,3 +16,6 @@ If you stop paying for Roll20 Pro after you have imported the Legends Character 
 If you are updating a current game to this version, your attributes, skills, moves and items should carry over. 
 But anything in Potion pockets of bags or the Victories field of Pokemon will need to be manually copied over. 
 This is because Legends handles Potions differently and Pokerole 3.0 uses Training Points instead of victories.
+
+This link has a compilation of all the music I use for my games. (Github doesn't like hosting music).
+https://drive.google.com/drive/folders/1qOGnzHfxEoUKWzK5_rjtCeZnyhQsR3f7?usp=sharing
