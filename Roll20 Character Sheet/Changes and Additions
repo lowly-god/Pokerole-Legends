@@ -1,9 +1,9 @@
-Additions/Changes from Pokerole 2.0 Character Sheet: 
+R20 Character Sheet all additions/changes since 2.0: 
 
 Colors changed for nearly everything
 Typeless and Shadow type now valid types
 3.0 Ranks added
-Colosseum Ranks added
+Colosseum Ranks added (shares with Contest Ranks)
 Concept changed to Archetype
 Nature now auto-calculates Attribute Limit increase, decrease and Confidence
 Human characters have a working Special Attribute
@@ -25,4 +25,11 @@ Equipment Pocket displays main hand, off hand, armor, accessory.
 Old potions field removed as Potions work differently in Legends
 Pokemon now use Training Points
 Perk section added (also you can add any 1d[number] you want and roll them)
-Move now have all additional rollable skills, attributes, types, targets etc.
+Moves now called Moves / Maneuvers, all additional rollable skills, attributes, types, targets etc added.
+
+Still to do:
+Vehicle sheet toggle
+Vehicle specific Status Conditions
+Crew slots
+Commands 
+???
