@@ -1,10 +1,12 @@
 R20 Character Sheet all additions/changes since 2.0: 
 
+3.0 Ranks added
 Colors changed for nearly everything
 Typeless and Shadow type now valid types
-3.0 Ranks added
-Colosseum Ranks added (shares with Contest Ranks)
 Concept changed to Archetype
+Human characters use Pronouns instead of Gender now
+Languages field added to Trainer sheets
+Colosseum Ranks added (shares with Contest Ranks)
 Nature now auto-calculates Attribute Limit increase, decrease and Confidence
 Human characters have a working Special Attribute
 Stamina Points added and auto-calculate by Rank
