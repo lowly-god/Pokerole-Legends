@@ -308,7 +308,7 @@
                                 <option value="dragon">Dragon</option>
                                 <option value="electric">Electric</option>
                                 <option value="fairy">Fairy</option>
-                                <option value="fight">Fight</option>
+                                <option value="fighting">Fighting</option>
                                 <option value="fire">Fire</option>
                                 <option value="flying">Flying</option>
                                 <option value="ghost">Ghost</option>
@@ -334,7 +334,7 @@
                                 <option value="dragon">Dragon</option>
                                 <option value="electric">Electric</option>
                                 <option value="fairy">Fairy</option>
-                                <option value="fight">Fight</option>
+                                <option value="fighting">Fighting</option>
                                 <option value="fire">Fire</option>
                                 <option value="flying">Flying</option>
                                 <option value="ghost">Ghost</option>
@@ -354,9 +354,14 @@
                     </div>
                     <div style="margin-bottom:5px;" >
                         <input type="hidden" class="creature-toggle" name="attr_creature_mode"   value="0" />
-                        <span class="field-labeled" style="width:120px;">
+                        <span class="field-labeled sheet-pokemon-only" style="width:120px;">
                             <input type="text" name="attr_gender" title="@{gender}" style="text-align:center" />
                             <span>Gender</span>
+                        </span>
+                        
+                        <span class="field-labeled sheet-trainer-only" style="width:120px;">
+                            <input type="text" name="attr_pronouns" title="@{pronouns}" style="text-align:center" />
+                            <span>Pronouns</span>
                         </span>
 
                         <span class="field-labeled" style="width:100px">
@@ -393,20 +398,22 @@
                             <input type="hidden" name="attr_previous_creature_mode" value="1" />  <!-- assume pokemon start -->
                             <span >Nature</span>
                         </span>
-                        
-                        
                         <span class="field-labeled sheet-trainer-only" style="width:70px;text-align:center">
                             <input type="number" name="attr_age" title="@{age}" />
                             <span>Age</span>
                         </span>
-                    </div>
-                    <div class="sheet-trainer-only" style="margin-bottom:5px;" >
-                        <span class="field-labeled" style="width:100px;text-align:center">
+                        <span class="field-labeled sheet-trainer-only" style="width:99px;text-align:center">
                             <input type="number" name="attr_money" title="@{money}" />
                             <span>Money</span>
                         </span>
                     </div>
-                    <div class="sheet-pokemon-only sheet-PMD-only" style="margin-bottom:5px;" >
+                     <div class="sheet-trainer-only" style="margin-bottom:5px;" >
+                        <span class="field-labeled" style="width:100%;">
+                            <input type="text" name="attr_languages" title="@{languages}"  />
+                            <span>Languages</span>
+                        </span>
+                         </div>
+                        <div class="sheet-pokemon-only sheet-PMD-only" style="margin-bottom:5px;" >
                         <span class="field-labeled" style="width:100px;text-align:center">
                             <input type="number" name="attr_money" title="@{money}"  />
                             <span>Apples</span>
@@ -967,10 +974,8 @@
                                 <select name="attr_accuracy_attribute" value="@{brawl}" title="@{accuracy_attribute}" style="width:auto">
                                     <option value="@{brawl}">Brawl</option>
                                     <option value="@{channel}">Channel</option>
-                                    <option value="@{throw}">Throw</option>
-                                    <option value="@{weapons}">Weapons</option>
                                     <option value="@{aura}">Aura</option>
-                                    <option value="@{psychic}">Psychic</option>
+                                    <option value="@{weapons}">Weapons</option>
                                 </select>
                             </span>
                             <span style="display:inline-block;width:120px">
@@ -1119,23 +1124,20 @@
                                 <span class="field-labeled" style="width:100px">
                                     <select name="attr_generic_specialty" title="@{generic_specialty}">
                                         <option value="0">-</option>
-                                        <optgroup label="Fight">
+                                        <optgroup label="Combat">
                                             <option value="@{brawl}">Brawl</option>
                                             <option value="@{channel}">Channel</option>
+                                            <option value="@{aura}">Aura</option>
+                                            <option value="@{weapons}">Weapons</option>
                                             <option value="@{clash}">Clash</option>
                                             <option value="@{evasion}">Evasion</option>
-                                            <option value="@{throw}">Throw</option>
-                                            <option value="@{weapons}">Weapons</option>
-                                            <option value="@{aura}">Aura</option>
-                                            <option value="@{psychic}">Psychic</option>
                                         </optgroup>
                                         <optgroup label="Survival">
                                             <option value="@{alert}">Alert</option>
                                             <option value="@{athletic}">Athletic</option>
                                             <option value="@{nature}">Nature</option>
                                             <option value="@{stealth}">Stealth</option>
-                                            <option value="@{fishing}">Fishing</option>
-                                            <option value="@{handling}">Handling</option>
+                                            <option value="@{luck}">Luck</option>
                                         </optgroup>
                                         <optgroup label="Social">
                                             <option value="@{allure}">Charm</option>
@@ -1143,14 +1145,13 @@
                                             <option value="@{etiquette}">Etiquette</option>
                                             <option value="@{intimidate}">Intimidate</option>
                                             <option value="@{perform}">Perform</option>
-                                            <option value="@{medium}">Medium</option>
-                                            <option value="@{luck}">Luck</option>
+                                            <option value="@{handling}">handling</option>
+                                            
                                         </optgroup>
                                         <optgroup label="Knowledge">
                                             <option value="@{crafts}">Crafts</option>
                                             <option value="@{lore}">Lore</option>
                                             <option value="@{medicine}">Medicine</option>
-                                            <option value="@{science}">Science</option>
                                             <option value="@{technology}">Technology</option>
                                             <option value="@{cooking}">Cooking</option>
                                         </optgroup>
@@ -1165,7 +1166,7 @@
                                             <option value="@{loyalty}">Loyalty</option>
                                         </optgroup>
                                         <optgroup label="Extra">
-                                        <option value="@{extra_fight}">Extra 1</option>
+                                        <option value="@{extra_combat}">Extra 1</option>
                                         <option value="@{extra_survival}">Extra 2</option>
                                         <option value="@{extra_social}">Extra 3</option>
                                         <option value="@{extra_knowledge}">Extra 4</option>
@@ -1265,7 +1266,7 @@
             <div class="skills-main">
                 <input type="hidden" class="creature-toggle" name="attr_creature_mode" value="0" />
                 <div class="skills-col">
-                    <label >Fight</label>
+                    <label >Combat</label>
                 </div>
                 <div class="skills-col">
                     <label >Survival</label>
@@ -1290,6 +1291,10 @@
                         <input type="number" name="attr_channel" title="@{channel}" min="0" value="0" max="5" />
                     </div>
                     <div>
+                        <strong>Aura</strong>
+                        <input type="number" name="attr_aura" title="@{aura}" min="0" value="0" max="5" />
+                    </div>
+                    <div>
                         <strong>Clash</strong>
                         <input type="number" name="attr_clash" title="@{clash}" min="0" value="0" max="5" />
                     </div>
@@ -1298,8 +1303,8 @@
                         <input type="number" name="attr_evasion" title="@{evasion}" min="0" value="0" max="5" />
                     </div>
                     <div>
-                        <input type="text" name="attr_extra_fight_name" title="@{extra_fight_name}" placeholder="Extra" style="margin-left:20px;text-align:right;width:80px;border:none;border-bottom:2px;" />
-                        <input type="number" name="attr_extra_fight" title="@{extra_fight}" min="0" value="0" max="5" />
+                        <input type="text" name="attr_extra_combat_name" title="@{extra_combat_name}" placeholder="Extra" style="margin-left:20px;text-align:right;width:80px;border:none;border-bottom:2px;" />
+                        <input type="number" name="attr_extra_combat" title="@{extra_combat}" min="0" value="0" max="5" />
                     </div>
                 </div>
                 <div class="skills-col trainer-only">
@@ -1308,28 +1313,24 @@
                         <input type="number" name="attr_brawl" title="@{brawl}" min="0" value="0" max="5" />
                     </div>
                     <div>
-                        <strong>Evasion</strong>
-                        <input type="number" name="attr_evasion" title="@{evasion}" min="0" value="0" max="5" />
+                        <strong>Channel</strong>
+                        <input type="number" name="attr_channel" title="@{channel}" min="0" value="0" max="5" />
                     </div>
                     <div>
-                        <strong>Throw</strong>
-                        <input type="number" name="attr_throw" title="@{throw}" min="0" value="0" max="5" />
+                        <strong>Aura</strong>
+                        <input type="number" name="attr_aura" title="@{aura}" min="0" value="0" max="5" />
                     </div>
                     <div>
                         <strong>Weapons</strong>
                         <input type="number" name="attr_weapons" title="@{weapons}" min="0" value="0" max="5" />
                     </div>
-                     <div>
-                        <strong>Aura</strong>
-                        <input type="number" name="attr_aura" title="@{aura}" min="0" value="0" max="5" />
+                    <div>
+                        <strong>Evasion</strong>
+                        <input type="number" name="attr_evasion" title="@{evasion}" min="0" value="0" max="5" />
                     </div>
                     <div>
-                        <strong>Psychic</strong>
-                        <input type="number" name="attr_psychic" title="@{psychic}" min="0" value="0" max="5" />
-                    </div>
-                    <div>
-                        <input type="text" name="attr_extra_fight_name" title="@{extra_fight_name}" placeholder="Extra" style="margin-left:20px;text-align:right;width:80px;border:none;border-bottom:2px;" />
-                        <input type="number" name="attr_extra_fight" title="@{extra_fight}" min="0" value="0" max="5" />
+                        <input type="text" name="attr_extra_combat_name" title="@{extra_combat_name}" placeholder="Extra" style="margin-left:20px;text-align:right;width:80px;border:none;border-bottom:2px;" />
+                        <input type="number" name="attr_extra_combat" title="@{extra_combat}" min="0" value="0" max="5" />
                     </div>
                     </div>
                         <div class="skills-col pokemon-only">
@@ -1348,6 +1349,10 @@
                     <div>
                         <strong>Stealth</strong>
                         <input type="number" name="attr_stealth" title="@{stealth}" min="0" value="0" max="5" />
+                    </div>
+                    <div>
+                        <strong>Luck</strong>
+                        <input type="number" name="attr_luck" title="@{luck}" min="0" value="0" max="5" />
                     </div>
                     <div>
                         <input type="text" name="attr_extra_survival_name" title="@{extra_survival_name}" placeholder="Extra" style="margin-left:20px;text-align:right;width:80px;border:none;border-bottom:2px;" />
@@ -1372,12 +1377,8 @@
                         <input type="number" name="attr_stealth" title="@{stealth}" min="0" value="0" max="5" />
                     </div>
                     <div>
-                        <strong>Fishing</strong>
-                        <input type="number" name="attr_fishing" title="@{fishing}" min="0" value="0" max="5" />
-                    </div>
-                    <div>
-                        <strong>Handling</strong>
-                        <input type="number" name="attr_handling" title="@{handling}" min="0" value="0" max="5" />
+                        <strong>Luck</strong>
+                        <input type="number" name="attr_luck" title="@{luck}" min="0" value="0" max="5" />
                     </div>
                     <div>
                         <input type="text" name="attr_extra_survival_name" title="@{extra_survival_name}" placeholder="Extra" style="margin-left:20px;text-align:right;width:80px;border:none;border-bottom:2px;" />
@@ -1401,13 +1402,9 @@
                         <strong>Perform</strong>
                         <input type="number" name="attr_perform" title="@{perform}" min="0" value="0" max="5" />
                     </div>
-                     <div>
-                        <strong>Medium</strong>
-                        <input type="number" name="attr_medium" title="@{medium}" min="0" value="0" max="5" />
-                    </div>
                     <div>
-                        <strong>Luck</strong>
-                        <input type="number" name="attr_luck" title="@{luck}" min="0" value="0" max="5" />
+                        <strong>Handling</strong>
+                        <input type="number" name="attr_handling" title="@{handling}" min="0" value="0" max="5" />
                     </div>
                     <div>
                         <input type="text" name="attr_extra_social_name" title="@{extra_social_name}" placeholder="Extra" style="margin-left:20px;text-align:right;width:80px;border:none;border-bottom:2px;" />
@@ -1416,8 +1413,8 @@
                 </div>
                 <div class="skills-col pokemon-only">
                     <div>
-                        <strong>Charm</strong>
-                        <input type="number" name="attr_allure" title="@{allure}" min="0" value="0" max="5" />
+                        <strong>Empathy</strong>
+                        <input type="number" name="attr_empathy" title="@{empathy}" min="0" value="0" max="5" />
                     </div>
                     <div>
                         <strong>Etiquette</strong>
@@ -1430,6 +1427,10 @@
                     <div>
                         <strong>Perform</strong>
                         <input type="number" name="attr_perform" title="@{perform}" min="0" value="0" max="5" />
+                    </div>                    
+                    <div>
+                        <strong>Charm</strong>
+                        <input type="number" name="attr_allure" title="@{allure}" min="0" value="0" max="5" />
                     </div>
                     <div>
                         <input type="text" name="attr_extra_social_name" title="@{extra_social_name}" placeholder="Extra" style="margin-left:20px;text-align:right;width:80px;border:none;border-bottom:2px;" />
@@ -1445,17 +1446,13 @@
                         <strong>Lore</strong>
                         <input type="number" name="attr_lore"  title="@{lore}" min="0" value="0" max="5" />
                     </div>
-                    <div>
-                        <strong>Medicine</strong>
-                        <input type="number" name="attr_medicine" title="@{medicine}" min="0" value="0" max="5" />
-                    </div>
-                    <div>
-                        <strong>Science</strong>
-                        <input type="number" name="attr_science" title="@{science}" min="0" value="0" max="5" />
-                    </div>
                      <div>
                         <strong>Technology</strong>
                         <input type="number" name="attr_technology" title="@{technology}" min="0" value="0" max="5" />
+                    </div>                    
+                    <div>
+                        <strong>Medicine</strong>
+                        <input type="number" name="attr_medicine" title="@{medicine}" min="0" value="0" max="5" />
                     </div>
                     <div>
                         <strong>Cooking</strong>
@@ -1872,23 +1869,20 @@
                                 <span class="field-labeled">
                                     <select name="attr_move_accuracy_3" value="0" >
                                         <option value="0">-</option>
-                                        <optgroup label="Fight">              
+                                        <optgroup label="Combat">              
                                             <option value="@{brawl}">Brawl</option>
                                             <option value="@{channel}">Channel</option>
-                                            <option value="@{clash}">Clash</option>
-                                            <option value="@{evasion}">Evasion</option>
-                                            <option value="@{throw}">Throw</option>
                                             <option value="@{weapons}">Weapons</option>
                                             <option value="@{aura}">Aura</option>
-                                            <option value="@{psychic}">Psychic</option>
+                                            <option value="@{clash}">Clash</option>
+                                            <option value="@{evasion}">Evasion</option>
                                         </optgroup>
                                         <optgroup label="Survival">
                                             <option value="@{alert}">Alert</option>
                                             <option value="@{athletic}">Athletic</option>
                                             <option value="@{nature}">Nature</option>
                                             <option value="@{stealth}">Stealth</option>
-                                            <option value="@{fishing}">Fishing</option>
-                                            <option value="@{handling}">Handling</option>
+                                            <option value="@{luck}">Luck</option>
                                         </optgroup>
                                         <optgroup label="Social">
                                             <option value="@{allure}">Charm</option>
@@ -1897,13 +1891,12 @@
                                             <option value="@{intimidate}">Intimidate</option>
                                             <option value="@{perform}">Perform</option>
                                             <option value="@{medium}">Medium</option>
-                                            <option value="@{luck}">Luck</option>
+                                            <option value="@{handling}">Handling</option>
                                         </optgroup>
                                         <optgroup label="Knowledge">
                                         <option value="@{crafts}">Crafts</option>
                                         <option value="@{lore}">Lore</option>
                                         <option value="@{medicine}">Medicine</option>
-                                        <option value="@{science}">Science</option>
                                         <option value="@{technology}">Technology</option>
                                         <option value="@{cooking}">Cooking</option>
                                         </optgroup> 
@@ -1912,7 +1905,7 @@
                                         <option value="@{loyalty}">Loyalty</option>
                                         </optgroup>
                                         <optgroup label="Extra">
-                                        <option value="@{extra_fight}">Extra 1</option>
+                                        <option value="@{extra_combat}">Extra 1</option>
                                         <option value="@{extra_survival}">Extra 2</option>
                                         <option value="@{extra_social}">Extra 3</option>
                                         <option value="@{extra_knowledge}">Extra 4</option>
@@ -2118,12 +2111,12 @@
         getAttrs(["rank"], function(v) {
             const rank = parseInt(v.rank || 1, 10);
             let stamina = 0;
-            if (rank >= 1) stamina += 4;
+            if (rank >= 1) stamina += 5;
             if (rank >= 2) stamina += 3;
             if (rank >= 3) stamina += 2;
             if (rank >= 4) stamina += 2;
-            if (rank >= 5) stamina += 1;
-            if (rank >= 6) stamina += 1;
+            if (rank >= 5) stamina += 2;
+            if (rank >= 6) stamina += 2;
             if (rank >= 7) stamina += 1;
             if (rank >= 8) stamina += 1;
             setAttrs({ sp_max: stamina }, {silent: true});
@@ -2132,5 +2125,4 @@
 
 </script>
 </div>
-
 
