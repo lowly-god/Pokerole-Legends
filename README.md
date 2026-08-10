@@ -6,7 +6,7 @@ https://ko-fi.com/lowlygod
 Here you will find the current Legends Rules Supplement: V4.08 
 https://drive.google.com/file/d/11ZxkCpgDKhkKnwiUB7dfCMoYdYmbfjQJ/view?usp=sharing
 
-Here you will find the current Legends Rules Supplement with only regional variants, no Fakemon: 
+Here you will find the current Legends Rules Supplement with only regional variants, no Fakemon: V4.0.
 https://drive.google.com/file/d/1smYhaxGq0nXKLYYU_HpiOV0fN-zNfecH/view?usp=sharing
 
 Here you will find the Legends version of the Pokerole Helper Bot, it has all Legends Moves, Abilities and many other features. 
@@ -27,5 +27,5 @@ If you are updating a current game to this version, your attributes, skills, mov
 But anything in Potion pockets of bags or the Victories field of Pokemon will need to be manually copied over. 
 This is because Legends handles Potions differently and Pokerole 3.0 uses Training Points instead of victories.
 
-This link has a compilation of all the music I use for my games. (Github doesn't like hosting music).
+This link has a compilation of all the music I use for my games. 
 https://drive.google.com/drive/folders/1qOGnzHfxEoUKWzK5_rjtCeZnyhQsR3f7?usp=sharing
