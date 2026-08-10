@@ -1,5 +1,8 @@
 Here you will find my rules suplement for the Pokerole TTRPG: Pokerole Legends. As well as Roll20 Character Sheets, PNGs for the Pokedex and any other resources for it. 
 
+If you feel like showing support, you have my eternal gratitude, and you get the satisfaction of knowing you're a good person. 
+https://ko-fi.com/lowlygod
+
 Here you will find the current Legends Rules Supplement: V4.08 
 https://drive.google.com/file/d/11ZxkCpgDKhkKnwiUB7dfCMoYdYmbfjQJ/view?usp=sharing
 
