@@ -6,6 +6,9 @@ https://drive.google.com/file/d/11ZxkCpgDKhkKnwiUB7dfCMoYdYmbfjQJ/view?usp=shari
 Here you will find the current Legends Rules Supplement with only regional variants, no Fakemon: 
 https://drive.google.com/file/d/1smYhaxGq0nXKLYYU_HpiOV0fN-zNfecH/view?usp=sharing
 
+Here you will find the Legends version of the Pokerole Helper Bot. 
+https://discord.com/oauth2/authorize?client_id=1536204111723241472
+
 How to use the Legends Roll20 character sheets:
 1. To use them you must be on Roll20 Pro. Free and Plus don't have the Custom Character Sheet feature.
 If you stop paying for Roll20 Pro after you have imported the Legends Character Sheet, (I think) your game will continue to use them however. So think of it as one time purchase to use them I guess lol? 
