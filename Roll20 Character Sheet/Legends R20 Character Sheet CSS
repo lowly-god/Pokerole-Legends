@@ -23,7 +23,7 @@
     --dragon:#511d86;
     --electric:#bf9710;
     --fairy:#d579be;
-    --fight:#926848;
+    --fighting:#926848;
     --fire:#802626;
     --flying:#97b3b6;
     --ghost:#585b86;
@@ -671,7 +671,7 @@ div.sheet-section{
 .sheet-type-toggle[value="dragon"] ~    div.sheet-section{ background-color:var(--dragon);}
 .sheet-type-toggle[value="electric"] ~  div.sheet-section{ background-color:var(--electric);}
 .sheet-type-toggle[value="fairy"] ~     div.sheet-section{ background-color:var(--fairy);}
-.sheet-type-toggle[value="fight"] ~     div.sheet-section{ background-color:var(--fight);}
+.sheet-type-toggle[value="fighting"] ~  div.sheet-section{ background-color:var(--fighting);}
 .sheet-type-toggle[value="fire"] ~      div.sheet-section{ background-color:var(--fire);}
 .sheet-type-toggle[value="flying"] ~    div.sheet-section{ background-color:var(--flying);}
 .sheet-type-toggle[value="ghost"] ~     div.sheet-section{ background-color:var(--ghost);}
@@ -683,8 +683,8 @@ div.sheet-section{
 .sheet-type-toggle[value="rock"] ~      div.sheet-section{ background-color:var(--rock);}
 .sheet-type-toggle[value="steel"] ~     div.sheet-section{ background-color:var(--steel);}
 .sheet-type-toggle[value="water"] ~     div.sheet-section{ background-color:var(--water);}
-.sheet-type-toggle[value="typeless"] ~   div.sheet-section{ background-color:var(--typeless);}
-.sheet-type-toggle[value="shadow"] ~     div.sheet-section{ background-color:var(--shadow);}
+.sheet-type-toggle[value="typeless"] ~  div.sheet-section{ background-color:var(--typeless);}
+.sheet-type-toggle[value="shadow"] ~    div.sheet-section{ background-color:var(--shadow);}
 
 input[type="checkbox"]{
     display:inline;
@@ -998,10 +998,12 @@ div.sheet-character-header strong{
 .sheet-attributes .sheet-battle > label {
     width: 70px;
     text-align: right;
+    color: var(--background);
 }
 .sheet-attributes .sheet-social > label {
     width: 70px;
     text-align: right;
+    color: var(--background);
 }
 .sheet-attributes .sheet-battle .sheet-field-labeled,
 .sheet-attributes .sheet-social .sheet-field-labeled{
