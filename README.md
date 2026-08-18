@@ -1,4 +1,4 @@
-Here you will find my rules suplement for the Pokerole TTRPG: Pokerole Legends. As well as Roll20 Character Sheets, PNGs for the Pokedex and any other resources for it. 
+Here you will find my rules suplement for the Pokérole TTRPG: Pokérole Legends. As well as Roll20 Character Sheets, PNGs for the Pokedex and any other resources for it. 
 
 If you feel like showing support, you have my eternal gratitude, and you get the satisfaction of knowing you're a good person. 
 https://ko-fi.com/lowlygod
@@ -9,8 +9,11 @@ https://drive.google.com/file/d/11ZxkCpgDKhkKnwiUB7dfCMoYdYmbfjQJ/view?usp=shari
 Here you will find the current Legends Rules Supplement with only regional variants, no Fakemon: V4.0.
 https://drive.google.com/file/d/1smYhaxGq0nXKLYYU_HpiOV0fN-zNfecH/view?usp=sharing
 
-Here you will find the Legends version of the Pokerole Helper Bot, it has all Legends Pokémon, Moves, Abilities and many other features. 
+Here you will find the Legends version of the Pokérole Helper Bot, it has all Legends Pokémon, Moves, Abilities and many other features. 
 https://discord.com/oauth2/authorize?client_id=1536204111723241472 
+
+Join the Pokérole Legends Discord server
+https://discord.gg/TzdbXNDxdy
 
 How to use the Legends Roll20 character sheets:
 1. To use them you must be on Roll20 Pro. Free and Plus don't have the Custom Character Sheet feature.
@@ -23,8 +26,8 @@ If you stop paying for Roll20 Pro after you have imported the Legends Character 
 7. Launch your game.
 
 If you are updating a current game to this version, your attributes, skills, moves and items should carry over. 
-But anything in Potion pockets of bags or the Victories field of Pokemon will need to be manually copied over. 
-This is because Legends handles Potions differently and Pokerole 3.0 uses Training Points instead of victories.
+But anything in Potion pockets of bags or the Victories field of Pokémon will need to be manually copied over. 
+This is because Legends handles Potions differently and Pokérole 3.0 uses Training Points instead of victories.
 
 This link has a compilation of all the music I use for my games. 
 https://drive.google.com/drive/folders/1qOGnzHfxEoUKWzK5_rjtCeZnyhQsR3f7?usp=sharing
