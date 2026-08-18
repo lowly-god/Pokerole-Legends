@@ -9,7 +9,7 @@ https://drive.google.com/file/d/11ZxkCpgDKhkKnwiUB7dfCMoYdYmbfjQJ/view?usp=shari
 Here you will find the current Legends Rules Supplement with only regional variants, no Fakemon: V4.0.
 https://drive.google.com/file/d/1smYhaxGq0nXKLYYU_HpiOV0fN-zNfecH/view?usp=sharing
 
-Here you will find the Legends version of the Pokerole Helper Bot, it has all Legends Moves, Abilities and many other features. 
+Here you will find the Legends version of the Pokerole Helper Bot, it has all Legends Pokémon, Moves, Abilities and many other features. 
 https://discord.com/oauth2/authorize?client_id=1536204111723241472 
 
 How to use the Legends Roll20 character sheets:
