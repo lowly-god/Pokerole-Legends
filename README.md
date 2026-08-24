@@ -1,23 +1,23 @@
 Here you will find my rules suplement for the Pokérole TTRPG: Pokérole Legends. As well as Roll20 Character Sheets, PNGs for the Pokedex and any other resources for it. 
 
-Join the Pokérole Legends Discord server. On the server you will find updates for the Legends Rules Supplement, bot, and anything else Legends related. (You can assign yourself a role to get pinged for those). 
+Here you'll find the Pokérole Legends Discord server. On there are updates / changelogs for the Legends Rules Supplement, bot, and anything else Legends related. (You can assign yourself a role to get pinged for those). 
 It has channels for errata, suggestions, rules related questions, Legends Helper Bot, LFG, homebrew, Fakemon, resources, etc. 
 https://discord.gg/TzdbXNDxdy
-
-If you feel like showing support, you have my eternal gratitude, and you get the satisfaction of knowing you're a good person. 
-https://ko-fi.com/lowlygod
 
 Here you will find the current Legends Rules Supplement: V4.10 
 https://drive.google.com/file/d/11ZxkCpgDKhkKnwiUB7dfCMoYdYmbfjQJ/view?usp=sharing
 
-Here you will find the current Legends Rules Supplement with only regional variants, no Fakemon: V4.0.
+Here you will find the current Legends Rules Supplement; with only regional variants, no Fakemon: V4.0.
 https://drive.google.com/file/d/1smYhaxGq0nXKLYYU_HpiOV0fN-zNfecH/view?usp=sharing
 
-Here you will find the Legends version of the Pokérole Helper Bot, it has all Legends Pokémon, Moves, Abilities and many other features. 
+Here you will find the Legends version of the Pokérole Helper Bot, it has all the Legends Pokémon, Moves, Abilities and many more additional features. 
 https://discord.com/oauth2/authorize?client_id=1536204111723241472 
 
 This link has a compilation of all the music I use for my games. 
 https://drive.google.com/drive/folders/1qOGnzHfxEoUKWzK5_rjtCeZnyhQsR3f7?usp=sharing
+
+If you feel like showing support, you have my eternal gratitude, and you get the satisfaction of knowing you're a good person. 
+https://ko-fi.com/lowlygod
 
 
 How to use the Legends Roll20 character sheets:
