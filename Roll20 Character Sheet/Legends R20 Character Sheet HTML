@@ -552,11 +552,11 @@
                         <div class="battle strength">
                             <label>Strength</label>
                             <span class="field-labeled">
-                                <input type="number" name="attr_strength" title="@{strength}" min="1" value="1" max="10" />
+                                <input type="number" name="attr_strength" title="@{strength}" min="1" value="1" />
                                 <span title="">Score</span>
                             </span>
                             <span class="field-labeled">
-                                <input type="number" name="attr_strength_max" title="@{strength_max}" min="1" value="10" max="10" />
+                                <input type="number" name="attr_strength_max" title="@{strength_max}" min="1" value="10" />
                                 <span title="">Limit</span>
                             </span>
                             <span class="field-labeled">
@@ -580,11 +580,11 @@
                         <div class="battle dexterity">
                             <label>Dexterity</label>
                             <span class="field-labeled">
-                                <input type="number" name="attr_dexterity" title="@{dexterity}" min="1" value="1" max="10" />
+                                <input type="number" name="attr_dexterity" title="@{dexterity}" min="1" value="1" />
                                 <span title="">Score</span>
                             </span>
                             <span class="field-labeled">
-                                <input type="number" name="attr_dexterity_max" title="@{dexterity_max}" min="1" value="10" max="10" />
+                                <input type="number" name="attr_dexterity_max" title="@{dexterity_max}" min="1" value="10" />
                                 <span title="">Limit</span>
                             </span>
                             <span class="field-labeled">
@@ -608,11 +608,11 @@
                         <div class="battle vitality">
                             <label>Vitality</label>
                             <span class="field-labeled">
-                                <input type="number" name="attr_vitality" title="@{vitality}" min="1" value="1" max="10" />
+                                <input type="number" name="attr_vitality" title="@{vitality}" min="1" value="1" />
                                 <span title="">Score</span>
                             </span>
                             <span class="field-labeled">
-                                <input type="number" name="attr_vitality_max" title="@{vitality_max}" min="1" value="10" max="10" />
+                                <input type="number" name="attr_vitality_max" title="@{vitality_max}" min="1" value="10" />
                                 <span title="">Limit</span>
                             </span>
                             <span class="field-labeled">
@@ -636,11 +636,11 @@
                         <div class="battle trainer-only">
                             <label>Special</label>
                             <span class="field-labeled">
-                                <input type="number" name="attr_special" title="@{special}" min="1" value="1" max="10" />
+                                <input type="number" name="attr_special" title="@{special}" min="1" value="1" />
                                 <span title="">Score</span>
                             </span>
                             <span class="field-labeled">
-                                <input type="number" name="attr_special_max" title="@{special_max}" min="1" value="10" max="10" />
+                                <input type="number" name="attr_special_max" title="@{special_max}" min="1" value="10" />
                                 <span title="">Limit</span>
                             </span>
                             <span class="field-labeled">
@@ -664,11 +664,11 @@
                         <div class="battle insight">
                             <label>Insight</label>
                             <span class="field-labeled">
-                                <input type="number" name="attr_insight" title="@{insight}" min="1" value="1" max="10" />
+                                <input type="number" name="attr_insight" title="@{insight}" min="1" value="1" />
                                 <span title="">Score</span>
                             </span>
                             <span class="field-labeled">
-                                <input type="number" name="attr_insight_max" title="@{insight_max}" min="1" value="10" max="10" />
+                                <input type="number" name="attr_insight_max" title="@{insight_max}" min="1" value="10" />
                                 <span title="">Limit</span>
                             </span>
                             <span class="field-labeled">
