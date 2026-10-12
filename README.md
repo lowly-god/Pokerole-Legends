@@ -4,7 +4,7 @@ Here you'll find the Pokérole Legends Discord server. On there are updates / ch
 It has channels for errata, suggestions, rules related questions, Legends Helper Bot, LFG, homebrew, Fakemon, resources, etc. 
 https://discord.gg/TzdbXNDxdy
 
-Here you will find the current Legends Rules Supplement: V4.10 
+Here you will find the current Legends Rules Supplement: V4.11 
 https://drive.google.com/file/d/11ZxkCpgDKhkKnwiUB7dfCMoYdYmbfjQJ/view?usp=sharing
 
 Here you will find the current Legends Rules Supplement; with only regional variants, no Fakemon: V4.0.
